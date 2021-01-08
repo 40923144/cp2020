@@ -87,6 +87,7 @@ img.add_border {
 </head>
 <body>
 <div class='container'><nav>
+        
     <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -132,4 +133,102 @@ img.add_border {
           </div>
           
         </header>
-    </nav><section><h1>Site Map</h1><div id="tipue_search_content"></div><ul><li><a href='PCH14 TCP and UDP Protocols.html'>PCH14 TCP and UDP Protocols</a><ul><li><a href='1. Overview.html'>1. Overview</a><li><a href='2. TCP and UDP..html'>2. TCP and UDP.</a><ul><li><a href='TCP VS UDP.html'>TCP VS UDP</a></li></ul><li><a href='3. TCP IP Stack.html'>3. TCP IP Stack</a><ul><li><a href='EXAMPLE 1.html'>EXAMPLE 1</a><li><a href='EXAMPLE 2.html'>EXAMPLE 2</a></li></ul><li><a href='4. Networking：Transfer Protocols.html'>4. Networking：Transfer Protocols</a><ul><li><a href='Email.html'>Email</a></li></ul><li><a href='5. FTP-1.html'>5. FTP-1</a><ul><li><a href='Active vs Passive.html'>Active vs Passive</a><li><a href='Useing FTP.html'>Useing FTP</a></li></ul><li><a href='6. SSL-1.html'>6. SSL-1</a><ul><li><a href='EXAMPLE.html'>EXAMPLE</a></li></li></ul></ul><li><a href='PCH14 TCP和UDP協定.html'>PCH14 TCP和UDP協定</a><ul><li><a href='1. 概述.html'>1. 概述</a><li><a href='2. TCP和UDP.html'>2. TCP和UDP</a><ul><li><a href='TCP VS UDP協議.html'>TCP VS UDP協議</a><li><a href='TCP窗口.html'>TCP窗口</a></li></ul><li><a href='3. TCP IP堆棧.html'>3. TCP IP堆棧</a><ul><li><a href='舉例說明1.html'>舉例說明1</a><li><a href='舉例說明2.html'>舉例說明2</a></li></ul><li><a href='4. 網路：傳輸協議.html'>4. 網路：傳輸協議</a><ul><li><a href='電子郵件.html'>電子郵件</a></li></ul><li><a href='5. FTP-2.html'>5. FTP-2</a><ul><li><a href='主動與被動.html'>主動與被動</a><li><a href='使用FTP.html'>使用FTP</a></li></ul><li><a href='6. SSL-2.html'>6. SSL-2</a><ul><li><a href='舉例說明.html'>舉例說明</a></li></ul></section></div></body></html>
+    <div id="tipue_search_content">主動與被動 << <a href='主動與被動.html'>Previous</a> <a href='6. SSL-2.html'>Next</a> >> 6. SSL-2<br /><h1>使用FTP</h1>
+<p>          <span>使用命令行訪問FTP公共服務器並不像使用Web瀏覽器那樣友好。但是，這兩種方法都是可行的，並且已在公司網絡中使用。</span></p>
+<ul lang="">
+<li lang=""><span><span>打開選擇的網絡瀏覽器</span></span></li>
+<li lang=""><span><span>使用此URL：ftp.funet.fi</span></span></li>
+<li lang=""><span><span>點擊“發布”，然後點擊“標準”，然後點擊“ RFC”</span></span></li>
+<li lang=""><span><span>搜索RFC 959並訪問.txt或.pdf文件（單擊鼠標左鍵）</span></span></li>
+<li lang=""><span><span>搜索RFC 4217並訪問.txt或.pdf文件（單擊鼠標左鍵）</span></span></li>
+<li lang=""><span><span>如果您確實需要該文件，則可以右鍵單擊並另存為。</span></span></li>
+</ul>
+<p id="N106D3" lang=""><span><span>現在您已經看到文件結構，請注意，它類似於瀏覽本地硬盤驅動器，唯一的區別是您使用“ /”（正斜杠）而不是“ \”（反斜杠），因為您通過以下方式訪問文件夾互聯網。</span></span></p>
+<p id="N106D6" lang="">          注意：在接下來的使用命令行界面的步驟中，您將只能瀏覽FTP服務器，並且將無法傳輸文件，因為ftp.exe默認情況下不支持被動模式。您可以在Linux Distro中使用命令行工具。或者，在Windows中，您可以轉到Passive-FTP.com並下載免費軟件。</p>
+<p id="N106DB" lang="">          但是，您可以通過首先允許FTP通過防火牆（確保在練習後將防火牆限制放回原位），然後在輸入密碼後發出以下命令來創建解決方法：</p>
+<ul lang="">
+<li lang="">引用pasv</li>
+</ul>
+<p>          <img class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/PCH14/image5.png"/></p>
+<ul lang="">
+<li lang=""><span>現在，“ dir，ls”（列出目錄內容）和“ get”（下載）命令將起作用。</span></li>
+<li lang=""><span>默認情況下，該文件將下載到用戶根目錄C：\ Windows \ Users \<span> </span>**或</span><em class="italic" lang=""><span>用戶名</span></em><span>**或C：\根目錄（無論安裝了OS的位置）。</span></li>
+</ul>
+<p>          <span>將公共FTP服務器設置為被動模式後，某些命令將不起作用，並調用服務器以關閉套接字。如果發生這種情況，請重新登錄。</span></p>
+<p id="N106FC" lang=""><span><span>使用鍵盤命令</span></span><img id="_i_3" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/PCH14/image6.png"/><span><span>+ r並鍵入ftp（在管理命令行界面中，您也可以鍵入ftp），</span><span>提示符更改為ftp&gt;</span></span></p>
+<p lang=""><span><span></span></span></p>
+<div class="imagewrap"><img class="popimg" height="154" id="_i_4" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/PCH14/image7.png" width="501"/></div>
+<div class="imagewrap"></div>
+<div class="imagewrap">
+<ul lang="">
+<li lang=""><span>輸入“ help”並查看命令。</span></li>
+<li lang=""><span>在命令提示符下鍵入：打開ftp.funet.fi。</span></li>
+<li lang=""><span>按照提示進行登錄。</span></li>
+<li lang=""><span>用戶名：匿名。</span></li>
+<li lang=""><span>密碼：任何通用電子郵件（例如user@user.com）。</span></li>
+</ul>
+<p id="N10723" lang=""><span><span>您會收到一條歡迎消息，現在可以通過鍵入以下命令來瀏覽瀏覽器中看到的目錄結構：</span></span></p>
+<ul lang="">
+<li lang=""><span><span>pwd-列出當前目錄。</span></span></li>
+</ul>
+<p>          <img class="popimg" id="_i_5" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/PCH14/image8.png"/></p>
+<p><span>cd —更改目錄。可以採用以下形式：</span></p>
+<ul lang="">
+<li lang=""><span><span>cd pub（請參閱上一練習中的URL路徑），或</span></span></li>
+<li lang=""><span><span>cd / pub / standards / RFC /</span></span></li>
+</ul>
+<p><span><span>          <img class="popimg" id="_i_6" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/PCH14/image9.png"/></span></span></p>
+<p><span><span>          現在，如果您使用的是變通方法，Mac或Linux，則可以使用“ get”命令下載文件：</span></span></p>
+<p><span><span>          <img class="popimg" height="85" id="_i_7" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/PCH14/image10.png" width="416"/></span></span></p>
+<p><span><span>          如果沒有被動模式解決方法，則只能使用第三方FTP客戶端，Mac或Linux。<span>但是，在公司環境中，可能需要對本地Intranet上的FTP進行故障排除，這很可能會設置為活動FTP。</span><span>顯然，與使用瀏覽器相比，命令行FTP服務的需求非常有限。</span></span></span></p>
+<br />主動與被動 << <a href='主動與被動.html'>Previous</a> <a href='6. SSL-2.html'>Next</a> >> 6. SSL-2</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

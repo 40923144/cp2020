@@ -87,6 +87,7 @@ img.add_border {
 </head>
 <body>
 <div class='container'><nav>
+        
     <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -132,4 +133,59 @@ img.add_border {
           </div>
           
         </header>
-    </nav><section><h1>Site Map</h1><div id="tipue_search_content"></div><ul><li><a href='PCH14 TCP and UDP Protocols.html'>PCH14 TCP and UDP Protocols</a><ul><li><a href='1. Overview.html'>1. Overview</a><li><a href='2. TCP and UDP..html'>2. TCP and UDP.</a><ul><li><a href='TCP VS UDP.html'>TCP VS UDP</a></li></ul><li><a href='3. TCP IP Stack.html'>3. TCP IP Stack</a><ul><li><a href='EXAMPLE 1.html'>EXAMPLE 1</a><li><a href='EXAMPLE 2.html'>EXAMPLE 2</a></li></ul><li><a href='4. Networking：Transfer Protocols.html'>4. Networking：Transfer Protocols</a><ul><li><a href='Email.html'>Email</a></li></ul><li><a href='5. FTP-1.html'>5. FTP-1</a><ul><li><a href='Active vs Passive.html'>Active vs Passive</a><li><a href='Useing FTP.html'>Useing FTP</a></li></ul><li><a href='6. SSL-1.html'>6. SSL-1</a><ul><li><a href='EXAMPLE.html'>EXAMPLE</a></li></li></ul></ul><li><a href='PCH14 TCP和UDP協定.html'>PCH14 TCP和UDP協定</a><ul><li><a href='1. 概述.html'>1. 概述</a><li><a href='2. TCP和UDP.html'>2. TCP和UDP</a><ul><li><a href='TCP VS UDP協議.html'>TCP VS UDP協議</a><li><a href='TCP窗口.html'>TCP窗口</a></li></ul><li><a href='3. TCP IP堆棧.html'>3. TCP IP堆棧</a><ul><li><a href='舉例說明1.html'>舉例說明1</a><li><a href='舉例說明2.html'>舉例說明2</a></li></ul><li><a href='4. 網路：傳輸協議.html'>4. 網路：傳輸協議</a><ul><li><a href='電子郵件.html'>電子郵件</a></li></ul><li><a href='5. FTP-2.html'>5. FTP-2</a><ul><li><a href='主動與被動.html'>主動與被動</a><li><a href='使用FTP.html'>使用FTP</a></li></ul><li><a href='6. SSL-2.html'>6. SSL-2</a><ul><li><a href='舉例說明.html'>舉例說明</a></li></ul></section></div></body></html>
+    <div id="tipue_search_content">1. 概述 << <a href='1. 概述.html'>Previous</a> <a href='TCP VS UDP協議.html'>Next</a> >> TCP VS UDP協議<br /><h1>2. TCP和UDP</h1>
+<p><span></span>          <span>TCP是一種面向連接的協議，可確保將數據段從一台設備可靠地傳輸到另一台設備。在傳輸過程中，如果某個段丟失，則發起方設備將檢測到該段並將其重新發送或重新傳輸。每次通信在收到後都會得到確認，從而提供一個安全的模型來確保成功進行通信。這種傳輸方式適用於所有網絡數據類型，尤其是那些需要確保傳輸的網絡數據類型。</span></p>
+<p id="N106A3" lang=""><span><span>          啟動TCP通信時，發起方和接收方在開始數據傳輸之前執行“三向握手”。</span><span>第一步，發起方發送一個設置了同步（SYN）標誌的數據包。</span><span>接下來，接收器通過發回一個同步確認（SYN-ACK）標記數據包來確認此SYN標記數據包的接收。</span><span>最後，始發者發送對已同步確認的標記數據包的確認，然後發生數據傳輸。</span></span></p>
+<p id="N106B8" lang=""><span>          UDP（或用戶數據報協議）被開發為無連接協議，目的是通過TCP傳輸提高網絡速度。由於TCP中的三向握手以及所有的交付保證和質量控制，TCP具有大量的網絡開銷，從而降低了其通信速度。網絡工程師意識到有時您不需要交付保證或質量控制。這樣就建立了UDP。</span></p>
+<p id="N106BB" lang=""><span><span>          UDP被認為是不可靠的，因為如果在傳輸過程中丟棄了一個段，則發送設備將不知道也不在乎。</span><span>沒有重傳。</span><span>數據一旦發送，就消失了。</span><span>但是，這對於音頻和視頻流來說是很好的。</span><span>在這些應用程序中，傳輸的數據非常大，如果丟棄單個片段，則不會影響所發送的音頻或視頻的整體質量。</span></span></p>
+<br />1. 概述 << <a href='1. 概述.html'>Previous</a> <a href='TCP VS UDP協議.html'>Next</a> >> TCP VS UDP協議</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

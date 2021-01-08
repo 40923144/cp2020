@@ -87,6 +87,7 @@ img.add_border {
 </head>
 <body>
 <div class='container'><nav>
+        
     <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -132,4 +133,60 @@ img.add_border {
           </div>
           
         </header>
-    </nav><section><h1>Site Map</h1><div id="tipue_search_content"></div><ul><li><a href='PCH14 TCP and UDP Protocols.html'>PCH14 TCP and UDP Protocols</a><ul><li><a href='1. Overview.html'>1. Overview</a><li><a href='2. TCP and UDP..html'>2. TCP and UDP.</a><ul><li><a href='TCP VS UDP.html'>TCP VS UDP</a></li></ul><li><a href='3. TCP IP Stack.html'>3. TCP IP Stack</a><ul><li><a href='EXAMPLE 1.html'>EXAMPLE 1</a><li><a href='EXAMPLE 2.html'>EXAMPLE 2</a></li></ul><li><a href='4. Networking：Transfer Protocols.html'>4. Networking：Transfer Protocols</a><ul><li><a href='Email.html'>Email</a></li></ul><li><a href='5. FTP-1.html'>5. FTP-1</a><ul><li><a href='Active vs Passive.html'>Active vs Passive</a><li><a href='Useing FTP.html'>Useing FTP</a></li></ul><li><a href='6. SSL-1.html'>6. SSL-1</a><ul><li><a href='EXAMPLE.html'>EXAMPLE</a></li></li></ul></ul><li><a href='PCH14 TCP和UDP協定.html'>PCH14 TCP和UDP協定</a><ul><li><a href='1. 概述.html'>1. 概述</a><li><a href='2. TCP和UDP.html'>2. TCP和UDP</a><ul><li><a href='TCP VS UDP協議.html'>TCP VS UDP協議</a><li><a href='TCP窗口.html'>TCP窗口</a></li></ul><li><a href='3. TCP IP堆棧.html'>3. TCP IP堆棧</a><ul><li><a href='舉例說明1.html'>舉例說明1</a><li><a href='舉例說明2.html'>舉例說明2</a></li></ul><li><a href='4. 網路：傳輸協議.html'>4. 網路：傳輸協議</a><ul><li><a href='電子郵件.html'>電子郵件</a></li></ul><li><a href='5. FTP-2.html'>5. FTP-2</a><ul><li><a href='主動與被動.html'>主動與被動</a><li><a href='使用FTP.html'>使用FTP</a></li></ul><li><a href='6. SSL-2.html'>6. SSL-2</a><ul><li><a href='舉例說明.html'>舉例說明</a></li></ul></section></div></body></html>
+    <div id="tipue_search_content">2. TCP and UDP. << <a href='2. TCP and UDP..html'>Previous</a> <a href='3. TCP IP Stack.html'>Next</a> >> 3. TCP IP Stack<br /><h1>TCP VS UDP</h1>
+<p lang=""><span>       TCP and UDP have many differences. TCP is reliable, but UDP is unreliable. TCP focuses on connection-oriented communications using the three-way handshake, while UDP is connectionless. TCP uses windowing, discussed in more detail later, to control the amount of data sent at a given time based on changing network speeds, but UDP simply transmits everything once with no windowing. TCP also supports segment sequencing; UDP just hopes it gets to the destination in the right order. Finally, TCP waits for acknowledgements, but UDP just hopes it got there. To simplify it, TCP is an assured and reliable communication method, UDP is just a best-effort model.</span></p>
+<p lang=""><span> </span></p>
+<h4><span>TPC Windowing</span></h4>
+<p id="N10722" lang="">        TCP also supports a concept called windowing. If you have ever copied a file from a network share drive on the Windows operating system, you have seen windowing. Have you ever noticed when you copy a file over the network, it may start out saying there are “2 minutes remaining” until completion, then it jumps up to “3 hours remaining,” then back down to “30 minutes remaining”? This is TCP windowing in action.</p>
+<p id="N10725" lang="">        Essentially, when a communication session is established with TCP, it first performs the three-way handshake. Next, it starts with a small window size, like windows size 1 in the image below, where a single segment is sent over the network and acknowledged. If this is successful, it increases the window size to 2, sending two segments at a time. It continues to do this, increasing the number of segments each time, transmitting more data in each window until an error occurs and retransmissions must be done. If errors occur, TCP understands that it must have been transmitting too fast, so it shrinks the window to slow down communication. As transmissions occur successfully, it again increases the window to push more data in each window. This window size is continually adjusted to get the most segments per window with the least errors in communication.</p>
+<br />2. TCP and UDP. << <a href='2. TCP and UDP..html'>Previous</a> <a href='3. TCP IP Stack.html'>Next</a> >> 3. TCP IP Stack</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
